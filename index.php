@@ -19,7 +19,7 @@ require_login();
 $target = optional_param('target', '', PARAM_ALPHANUMEXT);
 
 if (isset($target) && ! empty($target)) {
-    $courseid = up1_meta_get_objects_by_field('up1urlfixe', $target);
+    $courseid = up1_meta_get_instanceid_by_field_text('up1urlfixe', $target);
 
     if (count($courseid) > 1) {
         throw new moodle_exception(
