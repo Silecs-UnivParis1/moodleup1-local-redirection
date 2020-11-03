@@ -21,6 +21,8 @@ $PAGE->set_pagelayout('report');
 $titre = 'Redirections - rapport';
 $PAGE->set_title($titre); // tab title
 $PAGE->set_heading($titre); // titre haut de page
+$PAGE->navbar->add('Stats redirections');
+
 echo $OUTPUT->header();
 
 $headers = ['Nombre', 'Url fixe', 'Cours', 'ID cours'];
