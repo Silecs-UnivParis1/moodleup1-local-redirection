@@ -6,4 +6,5 @@
  */
 
 $string['pluginname'] = "Url redirection";
+$string['redirection:viewreport'] = "Consulter les rapports d'url redirection";
 
